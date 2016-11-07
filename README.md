@@ -3,14 +3,11 @@
 This project contains answers to questions of Cisco coding challenge. I finished all 3 exercises in scala.
 It requires sbt to be installed. Project contains unit tests that covers all 3 exercises, but also contains runnable code. 
 
-Implementation of 1) and 2) is in `src/main/scala/cz/obratilmartin/ciscocodingchallenge/graphs/GraphWalker.scala`.
-I took recursive approach with tailrec optimization for both.
-
-Implementation of 3) is in `src/main/scala/cz/obratilmartin/ciscocodingchallenge/text/WordsCounter.scala`.
+For implementation of 1) and 2) I took recursive approach with tailrec optimization for both.
 
 You can run it using sbt:
 
-1) walkGraph
+## 1) walkGraph
 
 `sbt walkGraph`
 
@@ -20,7 +17,9 @@ Custom graph description can be supplied by this command:
 
 `sbt "walkGraph /your/own/path/to/graph.json"`
 
-2) paths
+Implementation is in src/main/scala/cz/obratilmartin/ciscocodingchallenge/graphs/GraphWalker.scala
+
+## 2) paths
 
 `sbt paths`
 
@@ -30,7 +29,9 @@ Custom graph description can be supplied by this command:
 
 `sbt "paths /your/own/path/to/graph.json"`
 
-3) words count
+Implementation is in src/main/scala/cz/obratilmartin/ciscocodingchallenge/graphs/GraphWalker.scala
+
+## 3) words count
 
 `sbt countWords`
 
@@ -39,3 +40,5 @@ Prints counts of words in text file. By default it takes text from `src/main/res
 Custom text file can be supplied by this command:
 
 `sbt "countWords /your/own/path/to/text.txt"`
+
+Implementation is in `src/main/scala/cz/obratilmartin/ciscocodingchallenge/text/WordsCounter.scala`.
